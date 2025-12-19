@@ -5,4 +5,7 @@ class GameState {
         int level;
         //Level level; //Niveau
         //Instance de level ... jsp
-};
+        int currentState;
+
+    int lose() {} //Défaite
+};  
