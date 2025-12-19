@@ -1,5 +1,7 @@
 #ifndef SINGLE_SNAKEABILITY_MENU_H
 #define SINGLE_SNAKEABILITY_MENU_H
+#include <iostream>
+#include <string>
 
 
 class Menu
@@ -7,22 +9,24 @@ class Menu
 public:
     Menu();
 
-    //menu loop
+
 
     void menuLoop();
 
-    //show menu
+
     void showMenu();
 
-    //get user input
-    void handleInput();
 
-    //use level loader
-    void loadLevel();
+    int handleInput();
 
-    // return choice to gamemanager
-    int startGame(int levelNum);
 
+    void callLevelLoader();
+
+
+    void startGame(int levelNum);
+
+private:
+    bool menuMode;
 };
 
 
